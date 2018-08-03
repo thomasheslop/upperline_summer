@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    
+  </head>
+  <body>
+    <a-scene>
+        <!--Camera Side View-->
+      <a-entity id="cameraWrapper" position="0 0 70">
+        <a-camera>
+          <a-cursor color="yellow" position="0 0 0"></a-cursor>
+        </a-camera>
+      </a-entity>
+        <a-assets>
+            <img src="https://entropymag.org/wp-content/uploads/2014/10/outer-space-wallpaper-pictures.jpg" id="background" />
+        </a-assets> 
+
+      <a-sphere id="mercury" position="40 1.25 -5" radius="4" color="grey"></a-sphere>
+     <a-sphere id="Venus" position="70 5.25 -5" radius="9" color="yellow"></a-sphere>
+    <a-sphere id="earth" position="100 10.25 -5" radius="10" color="blue"></a-sphere>
+    <a-sphere id="mars" position="150 10.25 -5" radius="5" color="red-brown"></a-sphere>
+    <a-sphere id="Jupiter" position="520 10.25 -5" radius="11.2" color="orange"></a-sphere>
+    <a-sphere id="Saturn" position="960 90.25 -5" radius="9.5" color="gold"></a-sphere>
+    <a-sphere id="Uranus" position="1920 150.25 -5" radius="40" color="paleblue"></a-sphere>
+    <a-sphere id="Neptune" position="3010 400.25 -5" radius="39" color="blue"></a-sphere>
+    <a-sphere id="Pluto" position="3950 350.25 -5" radius="0.2" color="lightbrown"></a-sphere>
+    <a-sky src="#background"></a-sky>
+    </a-scene>
+  </body>
+</html>
